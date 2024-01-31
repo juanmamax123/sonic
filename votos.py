@@ -11,5 +11,7 @@ if len(dpi)==13 :
     print("el candidato para alcalde es partido morado")
     alcalde=input("ingrese su voto: ")
     print ("alcalde")
+    print("se logro usted, nunca va a ganar la une")
 else:
     print("dpi incorrecto")
+    print("hello moto moto")
