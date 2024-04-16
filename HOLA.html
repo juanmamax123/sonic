@@ -10,9 +10,63 @@
             margin: 10px;
             padding: 10px;
         }
+    body {
+        font-family: Arial,sans-serif; /* establece una fuente legible para la pagina */
+        background-color: #f4f4f4; /* un fonfo gris claro para toda la pagina */
+        color : #333; /* texto gris oscuro para mejorar la legibilidad */
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #0056b3; /* un color azul profundo para los encabezados para que resalten */
+    }
+
+    a {
+        color: #0087cc; /* un azul mas claro para los enlaces */
+        text-decoration: underline; /* agrega un surayado de los enlaces */
+    }
+
+    a:hover {
+        text-decoration: underline; /* agrega un subrayado cuando pasas el mouse sobre los enlaces */
+    }
+    nav ul {
+        list-style-type: none; /* elimina los puntos de la lista predeterminados */
+        padding: 0;
+        background-color: #333;/*le da a la barra de navegacuib un fondo oscuro */
+    }
+
+    nav li {
+        display: inline; /* alinea los enlaces en una fila */
+        margin-right: 20px; /* pone espacio entre cada enlace */
+    }
+
+    nav a{
+        color: white; /* hace que el texto sea blanco para que sea legible */
+        font-weight: bold; /* hace que el texto sea negrita */
+    }
+
+    nav a:hover {
+        color: #ffcc00; /* cambia el color del enlace a amariloo cuando se pasa el mouse*/
+    }
+    
+    section {
+background-color: white; /* establece un fondo blanco para las secciones */
+border-radius: white; /* establece un fondo blanco para las secciones */
+box-shadow : 0 0 10px rgba(0, 0, 0, 0,1); /* añade una sombra ligera para dar profundidad */
+    }
+
+    article {
+        margin-bottom: 20px; /*añade espacio debajo ed cada articulo */
+    }
+
+    article:last-child {
+        margin-bottom: 0; /* elimina el margen inferior del ultimo articulo */
+    }
     </style>
 </html>
 <body>
+</style>
 
 <header>
     <hi>nombre de mi sitio web</hi>
@@ -38,10 +92,42 @@
 <h2>sobre nosotros</h2>
 <article>
 <h3>nuestra historia</h3>
-<p>tesxto sobre la historia de la compañia-</p>
+<p>texto sobre la historia de la compañia-</p>
 </article>
 <article>
     <h3>nuestro equipo</h3>
     <p>informacion sobre el equipo detras de la compañia</p>
 </article>
 </section>
+    <h3> nuesrro equipo</h3>
+    <p> informacion sobre el equipo detras de la compañia.</p>
+    </article>
+</section>
+
+ <!-- Seccion de productos -->
+ <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <article>
+        <h3>Producto 1</h3>
+        <p>Descripcion de este producto.</p>
+    </article>
+</section>
+
+<!-- Seccion de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Informacion sobre como contactarnos.</p>
+</section>
+
+<aside>
+    <h2>Noticias Recientes</h2>
+    <p>Algunas noticias breves o enlaces a blogs.</p>
+</aside>
+
+<footer>
+    <p>Derechos de autor o Nombre de Mi Sitio Web</p>
+</footer>
+
+</body>
+
+</html>
