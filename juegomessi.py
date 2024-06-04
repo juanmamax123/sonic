@@ -31,7 +31,7 @@ objetivo_y = random.randint(square_size, height - objetivo_size - square_size)  
 objetivo_rect = pygame.Rect(objetivo_x, objetivo_y, objetivo_size, objetivo_size)
 puntaje = 0
 
-speed = 5 
+speed = 10 
 
 proyectil_speed = 15
 proyectil_width = 5
