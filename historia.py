@@ -31,6 +31,13 @@ objetivo_y = random.randint(square_size, height - objetivo_size - square_size)  
 objetivo_rect = pygame.Rect(objetivo_x, objetivo_y, objetivo_size, objetivo_size)
 puntaje = 0
 
+speed = 29 
+
+proyectil_speed = 15
+proyectil_width = 5
+proyectil_height = 5
+proyectiles = []
+
 
 font = pygame.font.Font(None, 36)
 
@@ -45,26 +52,10 @@ while running:
                 proyectil = pygame.Rect(x + square_size // 2, y + square_size // 2, proyectil_width, proyectil_height)
                 proyectiles.append(proyectil)
 
-
-
-
-
-    for proyectil in proyectiles:
-        if cr7.get_rect(topleft=(objetivo_x, objetivo_y)).colliderect(proyectil):
-            proyectiles.remove(proyectil)
-            puntaje += 1
-            objetivo_x = random.randint(0, width - objetivo_size)
-            objetivo_y = random.randint(0, height - objetivo_size)
-            objetivo_rect.topleft = (objetivo_x, objetivo_y)
-
-
     screen.blit(background_image,(0,0))
-    for proyectil in proyectiles:
-        pygame.draw.rect(screen, (255, 255, 255), proyectil)
-    pygame.draw.rect(screen, (255, 0, 0), (x, y, square_size, square_size))
-    screen.blit(imp, (x, y))
-    screen.blit(cr7, (objetivo_x, objetivo_y))
-    
+    screen.blit(cr7, (700,750))
+    screen.blit(imp,(100,100))
+
 
     puntaje_texto = font.render("El majestuoso Sherk y el rescate de Fiona ", True, font_color)
     screen.blit(puntaje_texto, (10, 10))
